@@ -7,6 +7,8 @@ LABEL "com.github.actions.maintainer"="Alexander Matheson <awmatheson@github.com
 LABEL "com.github.actions.icon"="message-square"
 LABEL "com.github.actions.color"="black"
 
+RUN gem sources --add https://rubygems.org/
+
 RUN gem install octokit
 
 ADD entrypoint.sh /entrypoint.sh
